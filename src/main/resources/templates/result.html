@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Conversion Result</title>
+</head>
+<body>
+    <h1>Converted Amount</h1>
+    <p>Amount: <span th:text="${conversion.amount}"></span></p>
+    <p>From: <span th:text="${conversion.fromCurrency}"></span></p>
+    <p>To: <span th:text="${conversion.toCurrency}"></span></p>
+    <p>Converted Amount: <span th:text="${conversion.convertedAmount}"></span></p>
+
+    <a href="/api/v1/converter">Convert Another</a>
+</body>
+</html>
